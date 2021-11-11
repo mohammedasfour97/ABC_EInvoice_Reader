@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.abcsoftwares.einvoice.UI.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_scan_result"
+            app:destination="@id/fragment_scan_result"
+            app:popUpTo="@id/fragment_scan_result"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+
+    </fragment>
+
+
+    <!--<fragment
+        android:id="@+id/fragment_scan_barcode"
+        android:name="com.abcsoftwares.einvoice.UI.ScanBarcodeFragment"
+        tools:layout="@layout/fragment_scan_barcode">
+
+    <action
+        android:id="@+id/action_fragment_scan_barcode_to_fragment_main"
+        app:destination="@id/fragment_main"
+        app:enterAnim="@anim/slide_left"
+        app:exitAnim="@anim/wait_anim"
+        app:popEnterAnim="@anim/wait_anim"
+        app:popExitAnim="@anim/slide_right"/>
+
+    <action
+        android:id="@+id/action_fragment_scan_barcode_to_fragment_result"
+        app:destination="@id/fragment_scan_result"
+        app:popUpTo="@layout/fragment_scan_barcode"
+        app:popUpToInclusive="true"
+        app:enterAnim="@anim/slide_left"
+        app:exitAnim="@anim/wait_anim"
+        app:popEnterAnim="@anim/wait_anim"
+        app:popExitAnim="@anim/slide_right"/>
+    </fragment>
+
+-->
+
+    <fragment
+        android:id="@+id/fragment_scan_result"
+        android:name="com.abcsoftwares.einvoice.UI.ScanResultFragment"
+        tools:layout="@layout/fragment_scan_result">
+
+        <action
+            android:id="@+id/action_fragment_scan_result_to_fragment_main"
+            app:destination="@id/fragment_main"
+            app:popUpTo="@id/fragment_scan_result"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right"/>
+
+       <!-- <action
+            android:id="@+id/action_fragment_scan_result_to_fragment_scan_barcode"
+            app:destination="@id/fragment_scan_barcode"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right"/>
+            -->
+    </fragment>
+
+
+</navigation>

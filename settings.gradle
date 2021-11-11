@@ -1,0 +1,2 @@
+rootProject.name = "ABC E Invoice Reader"
+include ':app'

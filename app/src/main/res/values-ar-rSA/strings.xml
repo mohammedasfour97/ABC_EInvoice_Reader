@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ABC E Invoice Reader</string>
+    <string name="loading">جارى التحميل</string>
+    <string name="loading_msg">برجاء الانتظار حتى يتم التحميل</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="succ">تمت بنجاح</string>
+    <string name="error">خطأ</string>
+    <string name="some_thn_err">حدث خطأ ما</string>
+    <string name="write_here">اكتب هنا</string>
+    <string name="check_int_con">يرجى التأكد من إتصال بالإنترنت</string>
+    <string name="please_press_back_again">إضغط على زر الرجوع مرة أخرى للخروج من التطبيق</string>
+    <string name="loading_qr_data">جارى تحميل ال QR كود</string>
+    <string name="no_qr_data">لا يوجد بيانات لهذا ال QR كود</string>
+    <string name="ar">عربى</string>
+    <string name="en">إنجليزى</string>
+    <string name="scan_barcode">مسح QR كود</string>
+    <string name="scan_again">مسح مرة أخرى</string>
+</resources>
